@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bernard Blistin</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bernard Blistin</title>
 
-<style>
-body{
-    margin:0;
-    background:#000;
-    color:#fff;
-    font-family:Arial, sans-serif;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    text-align:center;
-}
-h1{
-    font-size:3rem;
-    margin-bottom:10px;
-}
-p{
-    color:#bbb;
-    font-size:1.2rem;
-}
-</style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .page {
+      width: 100vw;
+      height: 100vh;
+      background-image: url("portrait avec texte.jpg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #000;
+    }
+
+    @media (max-width: 768px) {
+      .page {
+        background-size: contain;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<div>
-    <h1>BERNARD BLISTIN</h1>
-    <p>Portfolio artistique en préparation</p>
-    <p>Photographie • Peinture • IA Créative • Sculpture</p>
-</div>
+  <main class="page"></main>
 </body>
 </html>
